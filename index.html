@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html class="ui-mobile">
+
+<head>
+    <meta charset="UTF-8">
+    <base href=".">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel="stylesheet" href="css/themes/default/jquery.mobile.css">
+    <link rel='stylesheet' href='css/themes/test.css'>
+
+    <script src="./index_files/jquery-1.8.2.min.js"></script>
+    <style type="text/css"></style>
+    <script src="./index_files/jquery.mobile-1.2.0.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBTZFaIi20YjBQE3QDC39k-x_SCl6aWue4&sensor=true"></script>
+    <script src="js/about.js"></script>
+    <script src="js/first-fortnight.js"></script>
+    <title></title>
+</head>
+
+<body class="ui-mobile-viewport ui-overlay-c">
+
+    <div data-role="page" id="home" data-url="home" tabindex="0" class="ui-page ui-body-c ui-page-active" style="min-height: 639px; ">
+
+        <header data-role="header" class="ui-header ui-bar-a" role="banner" data-position="fixed">
+
+            <h1 class="ui-title" role="heading" aria-level="1">discover</h1>
+
+            <a href="#info" id='infoButton' class="ui-btn-left ui-btn ui-btn-up-a ui-shadow ui-btn-corner-all" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="a"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text"><img src="./index_files/Information_YELLOW_icon_57x57px.png" class='ui-button-img'></span></span></a>
+            <a href="#share" id='searchButton' data-inline="true" class="ui-btn-right ui-btn ui-btn-up-a ui-shadow ui-btn-corner-all ui-btn-inline" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="a"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text"><img src="./index_files/Search_YELLOW_icon_57x57px.png" class='ui-button-img'></span></span></a>
+
+        </header>
+
+        <div data-role="content" class="ui-content" role="main">
+
+            <div class="ui-grid-b">
+                <div class="ui-block-a">
+                    <a href=" #events" class="ui-link"><img src="./index_files/events_icon_57x57px.png" data-prefetch="" class='iconHome'></a>
+                    <br>events</div>
+                <div class="ui-block-b">
+                    <a href=" #schedule" class="ui-link"><img src="./index_files/calender_icon_57x57px.png" data-prefetch="" class='iconHome'></a>
+                    <br>calendar</div>
+                <div class="ui-block-c">
+                    <a href=" #venues" class="ui-link"><img src="./index_files/venueIcon5757.png" data-prefetch="" class='iconHome'></a>
+                    <br>venues</div>
+
+            </div>
+            <div class="ui-grid-b">
+                <div class="ui-block-a">
+                    <a href=" #favourites" class="ui-link"><img src="./index_files/favourites_icon_57x57px.png" class='iconHome'></a>
+                    <br>favourites</div>
+                <div class="ui-block-b">
+                    <a href=" #info" class="ui-link"><img src="./index_files/Information_BLACKicon_57x57px.png" class='iconHome'></a>
+                    <br>info</div>
+                <div class="ui-block-c">
+                    <a href="#streetArt" class="ui-link"><img src="./index_files/streetarts_icon_57x57px.png" class='iconHome'></a>
+                    <br>street art</div>
+            </div>
+            <div class="ui-grid-b">
+                <div class="ui-block-a">
+                    <a href="http://www.the-secret-garden-project.com/firstFortnight/Jack/feedGET.php?twitterUser=JoanieWoanie" class="ui-link"><img src="./index_files/socialnetworks_icon_57x57px.png" rel="external" class='iconHome'></a>
+                    <br>social networks</div>
+                <div class="ui-block-b">
+                    <a href="http://firstfortnight.com/" class="ui-link"><img src="./index_files/blog_icon_57x57px.png" class='iconHome'></a>
+                    <br>blog</div>
+                <div class="ui-block-c">
+                    <a href=" #QRcodes" class="ui-link"><img src="./index_files/QR_icon_57x57px.png" class='iconHome'></a>
+                    <br>QR code</div>
+            </div>
+        </div>
+        <div data-role="footer" class="ui-bar" data-position="fixed">
+            <h4>first fortnight 2013</h4>
+        </div>
+    </div>
+
+    <div id="venues" data-role="page">
+        <div data-role="header">
+            <h1>venues</h1></div>
+        <div data-role="content">
+            <h2></h2>
+            <ul data-role="listview">
+                <li><a href="#category-items?category=Filmbase,%20Curved%20Street,%20Temple%20Bar">Filmbase</a></li>
+                <li><a href="#category-items?category=Button%20Factory,%20Curved%20Street,%20Temple%20Bar">Button Factory</a></li>
+                <li><a href="#category-items?category=The%20Workman's%20Club,%20Wellington%20Quay,%20Temple%20Bar">The Workman's Club</a></li>
+                <li><a href="#category-items?category=Pavillion%20Theatre,%20Dun%20Laoghaire">Pavillion Theatre</a></li>
+                <li><a href="#category-items?category=Smock%20Alley%20Theatre">Smock Alley Theatre</a></li>
+                <li><a href="#category-items?category=The%20New%20Theatre,%20Essex%20Street%20East">The New Theatre</a></li>
+                <li><a href="#category-items?category=Irish%20Film%20Institute,%20Temple%20Bar">Irish Film Institute</a></li>
+            </ul>
+        </div>
+        <div data-role="footer" class="ui-bar" data-position="fixed">
+            <h4>first fortnight 2013</h4>
+        </div>
+
+    </div>
+
+    <div id="schedule" data-role="page">
+        <div data-role="header">
+            <h1>calendar</h1></div>
+        <div data-role="content">
+            <h2></h2>
+            <ul data-role="listview">
+                <li><a href="#category-items?category=1">1st Feb - tuesday</a></li>
+                <li><a href="#category-items?category=2">2nd Feb - wednesday</a></li>
+                <li><a href="#category-items?category=3">3rd Feb - thursday</a></li>
+                <li><a href="#category-items?category=4">4th Feb - friday</a></li>
+                <li><a href="#category-items?category=5">5th Feb - saturday</a></li>
+                <li><a href="#category-items?category=6">6th Feb- sunday</a></li>
+                <li><a href="#category-items?category=7">7th Feb- monday</a></li>
+                <li><a href="#category-items?category=8">8th Feb - tuesday</a></li>
+                <li><a href="#category-items?category=9">9th Feb - wednesday</a></li>
+                <li><a href="#category-items?category=10">10th Feb - thursday</a></li>
+                <li><a href="#category-items?category=11">11th Feb - friday</a></li>
+                <li><a href="#category-items?category=12">12th Feb - saturday</a></li>
+                <li><a href="#category-items?category=13">13th Feb- sunday</a></li>
+            </ul>
+        </div>
+        <div data-role="footer" class="ui-bar" data-position="fixed">
+            <h4>first fortnight 2013</h4>
+        </div>
+    </div>
+
+    <div id="events" data-role="page">
+        <div data-role="header">
+            <h1>events</h1></div>
+        <div data-role="content">
+            <h2></h2>
+            <ul data-role="listview">
+                <li><a href="#category-items?category=music">music</a></li>
+                <li><a href="#category-items?category=art">visual art</a></li>
+                <li><a href="#category-items?category=spokenWord">Therapy Sessions</a></li>
+                <li><a href="#category-items?category=drama">drama</a></li>
+                <li><a href="#category-items?category=film">film</a></li>
+                <li><a href="#category-items?category=talks">Amnesty's Make Some Noise</a></li>
+                <li><a href="#category-items?category=streetArt">street art</a></li>
+            </ul>
+        </div>
+        <div data-role="footer" class="ui-bar" data-position="fixed">
+            <h4>first fortnight 2013</h4>
+        </div>
+    </div>
+
+    <div id="category-items" data-role="page">
+        <div data-role="header">
+            <h1></h1></div>
+
+        <div data-role="content"></div>
+        <div data-role="footer" class="ui-bar" data-position="fixed">
+            <h4>first fortnight 2013</h4>
+        </div>
+    </div>
+
+    <div id="gig" data-role="page">
+        <div data-role="header">
+            <a href="#home" data-icon="home" data-iconpos="notext">Home</a>
+            <h1></h1></div>
+
+        <div data-role="content"></div>
+    </div>
+   
+    <div data-role="footer">
+        <h4>first fortnight 2013</h4>
+    </div>
+</body>
+
+</html>
+
+<div data-role="page" id="favourites">
+    <div data-role="header" data-position="fixed">
+
+        <h1></h1>
+    </div>
+    <div data-role="content">
+    </div>
+
+    <div data-role="footer" class="ui-bar" data-position="fixed">
+        <h4>first fortnight 2013</h4>
+    </div>
+</div>
+
+<div data-role="page" id="socialNetworks">
+    <header data-role="header" id="masthead">
+        <h1>Web Designer Feed</h1>
+    </header>
+    <div data-role="content">
+        <ul data-role="listview">
+            <li>
+                <h3><a href="feedGET.php?twitterUser=JoanieWoanie">First Fortnight Festival</a></h3>
+                <p>Challenge Mental Health Prejudice Through Creative Arts</p>
+            </li>
+
+        </ul>
+    </div>
+    <footer data-role="footer">
+        <h4>first fortnight 2013</h4>
+    </footer>
+</div>
+
+<div data-role="page" id="streetArt">
+    <div data-role="header">
+        <h1>Main Page indexmapall</h1></div>
+    <div data-role="content" id="temp" class="Button Factory">
+        <a href="http://www.the-secret-garden-project.com/firstFortnight/arrayTestJoan.html"><img src="ICONS_57X57PX/streetarts_icon_57x57px.png" />
+            <p>Click Icon To Find Button Factory</p>
+        </a>
+    </div>
+    <p> Note that location settings must be enabled on your device to find your current location.</p>
+</div>
+
+<div data-role="page" id="share" data-url="share">
+    <div data-role="header">
+
+    </div>
+
+    <div data-role="content" data-theme="a" class="ui-corner-top ui-corner-bottom ui-content ui-body-a" role="main">
+        <h3>Share</h3>
+        <a href="http://www.the-secret-garden-project.com/firstFortnight/dialog-success.html" data-role="button" data-rel="dialog" data-transition="slidedown" data-theme="b" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-up-b"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">Email</span></span></a>
+        <a href="http://www.the-secret-garden-project.com/firstFortnight/dialog-success.html" data-role="button" data-rel="dialog" data-transition="slidedown" data-theme="b" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-up-b"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">Drive</span></span></a>
+        <a href="http://www.the-secret-garden-project.com/firstFortnight/dialog-success.html" data-role="button" data-rel="dialog" data-transition="slidedown" data-theme="b" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-up-b"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">Facebook</span></span></a>
+        <a href="http://www.the-secret-garden-project.com/firstFortnight/dialog-success.html" data-role="button" data-rel="dialog" data-transition="slidedown" data-theme="b" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-up-b"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">Tweet</span></span></a>
+        <a href="http://www.the-secret-garden-project.com/firstFortnight/dialog-success.html" data-role="button" data-rel="dialog" data-transition="slidedown" data-theme="b" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-up-b"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">Dropbox</span></span></a>
+
+        <a href=" #index" data-role="button" data-rel="back" data-theme="a" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-up-a"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">Cancel</span></span></a>
+    </div>
+
+</div>
+
+<div data-role="footer">
+
+</div>
+
+<div data-role="page" id="info" data-add-back-btn="true" data-url="info">
+    <div data-role="header">
+        <h1>INFO</h1>
+    </div>
+
+    <div data-role="content" id="content">
+        <p> </p>
+
+        <div style='width:100%' data-role="controlgroup" data-type="horizontal">
+
+            <a style='width:33%' href=" #" data-role="button" id="aboutBtn" selected="true"> about</a>
+            <a style='width:33%' href=" #" data-role="button" id="newsletterBtn">newsletter</a>
+            <a style='width:33%' href=" #" data-role="button" id="partnersBtn">partners</a>
+        </div>
+        <div id="about"> First Fortnight is an arts-based mental health awareness project that happens in the first two weeks of every year. This is our third year of operation having successfully produced First Fortnight 2010 and 2011. Specifically we are a small group of volunteers who work every spare moment we have to make this project happen because we believe passionately in it. We gain nothing but the satisfaction of knowing we can deliver something that we believe helps to inspire engagement with a crucially important issue.
+            <p> contact First Fortnight : </p>
+            <a href="mailto:talk@firstfortnight.com">By mail</a>
+            <br>
+            <a href="tel:0625570924">By phone</a>
+            <br>
+            <a href="sms:0625570924">By SMS</a>
+            <br>
+        </div>
+        <div id="tickets" style="display: none; "> buy tickets </div>
+        <div id="newsletter" style="display: none; "> newsletter</div>
+        <div id="partners" style="display: none; "> partners</div>
+        <p></p>
+
+    </div>
+</div>
+
+
+<div class="ui-loader ui-corner-all ui-body-a ui-loader-default"><span class="ui-icon ui-icon-loading"></span>
+    <h1>loading</h1></div>
+
+</body>
+
+</html>
